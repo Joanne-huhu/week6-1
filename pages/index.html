@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
     <%- include('./layout/header'); -%>
 <main>
 <!--banner-->
-<section class="container border-top py-lg-10">
+<section class="container border-top py-lg-10 px-0">
   <div class="position-relative">
     <picture>
       <source media="(min-width: 992px)" srcset="../assets/images/banner.png">
@@ -207,7 +207,7 @@
 <h2 class="mb-7">大家都在看</h2>
 
 <div class="row">
-  <div class="col-3 d-none d-lg-block">
+  <div class="col-lg-3 d-none d-lg-block">
     <div class="list-group p-5 gap-5" id="list-tab" role="tablist">
       <a class="list-group-item list-group-item-action active p-3 border-0" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="bi bi-dot"></i>酒精路跑地圖</a>
       <a class="list-group-item list-group-item-action border-0" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="bi bi-dot"></i>台北拉麵圖鑑</a>
@@ -216,7 +216,7 @@
       <a class="list-group-item list-group-item-action border-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="bi bi-dot"></i>週末露營趣</a>
     </div>
   </div>
-  <div class="col-9 p-7">
+  <div class="col-lg-9 col-12 p-7">
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
       <h3 class="fs-4 text-accent-200 mb-5">酒精路跑地圖</h3>
@@ -227,18 +227,18 @@
           <li>
             <picture  class="rounded-0">
               <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-              <img src="../assets/images/hots-1-sm.png" alt=""></li>
+              <img src="../assets/images/hots-1-sm.png" alt="" class="w-100"></li>
             </picture>
           <li class="d-none d-lg-block"><img src="../assets/images/hots-2.png" alt=""></li>
           <li class="d-none d-lg-block"><img src="../assets/images/hots-3.png" alt=""></li>
           <li class="d-none d-lg-block"><img src="../assets/images/hots-4.png" alt=""></li>
         </ul>
         <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
-          <div class="d-flex">
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#夜貓行程</a>
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#barhopping</a>
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#全台酒吧</a>
-        </div>
+          <ul class="d-flex list-unstyled text-primary-400">
+          <li class="article-tag me-3"><a href="#">#夜貓行程</a></li>
+          <li class="article-tag me-3"><a href="#">#barhopping</a></li>
+          <li class="article-tag"><a href="#">#全台酒吧</a></li>
+        </ul>
           <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a>
 
         </div>
