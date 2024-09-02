@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>index</title>
-    <script type="module" crossorigin src="/week6-1/assets/main-a9a38aa3.js"></script>
-    <link rel="stylesheet" href="/week6-1/assets/main-f26ceee3.css">
+    <script type="module" crossorigin src="/week6-1/assets/main-bed6e0bf.js"></script>
+    <link rel="stylesheet" href="/week6-1/assets/main-dac1f0bd.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-  <div class="container py-6">
+  <div class="container py-lg-6 py-4">
     
-    <h1><a class="navbar-brand me-6 text-neutral-500 fs-1" href="#">Vivre</a></h1>
-    <button class="navbar-toggler border-0 btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <h1><a class="navbar-brand me-6 text-neutral-500 fs-1" href="index.html">Vivre</a></h1>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -22,9 +22,9 @@
         <input class="form-control me-2 rounded-pill text-neutral-300 ps-4" type="search" placeholder="搜尋文章" aria-label="Search">
         <button class="btn position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="bi bi-search text-accent-200"></i></button>
       </form>
-      <ul class="navbar-nav mb-2 mb-lg-0 me-4 ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0 me-4 ms-auto ">
         <li class="nav-item">
-          <a class="nav-link" href="#">所有文章</a>
+          <a class="nav-link" href="article.html">所有文章</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">訂閱方案</a>
@@ -39,7 +39,7 @@
   </div>
 </nav><main>
 <!--banner-->
-<section class="container border-top py-lg-10">
+<section class="container border-top py-lg-10 px-0">
   <div class="position-relative">
     <picture>
       <source media="(min-width: 992px)" srcset="/week6-1/assets/banner-ff141a3d.png ">
@@ -235,7 +235,7 @@
 <h2 class="mb-7">大家都在看</h2>
 
 <div class="row">
-  <div class="col-3 d-none d-lg-block">
+  <div class="col-lg-3 d-none d-lg-block">
     <div class="list-group p-5 gap-5" id="list-tab" role="tablist">
       <a class="list-group-item list-group-item-action active p-3 border-0" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="bi bi-dot"></i>酒精路跑地圖</a>
       <a class="list-group-item list-group-item-action border-0" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="bi bi-dot"></i>台北拉麵圖鑑</a>
@@ -244,7 +244,7 @@
       <a class="list-group-item list-group-item-action border-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="bi bi-dot"></i>週末露營趣</a>
     </div>
   </div>
-  <div class="col-9 p-7">
+  <div class="col-lg-9 col-12 p-7">
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
       <h3 class="fs-4 text-accent-200 mb-5">酒精路跑地圖</h3>
@@ -255,18 +255,18 @@
           <li>
             <picture  class="rounded-0">
               <source media="(min-width: 992px)" srcset="/week6-1/assets/hots-1-4140643e.png ">
-              <img src="/week6-1/assets/hots-1-sm-d41ead80.png" alt=""></li>
+              <img src="/week6-1/assets/hots-1-sm-d41ead80.png" alt="" class="w-100"></li>
             </picture>
           <li class="d-none d-lg-block"><img src="/week6-1/assets/hots-2-0511cb4f.png" alt=""></li>
           <li class="d-none d-lg-block"><img src="/week6-1/assets/hots-3-1a547610.png" alt=""></li>
           <li class="d-none d-lg-block"><img src="/week6-1/assets/hots-4-ec19ac92.png" alt=""></li>
         </ul>
         <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
-          <div class="d-flex">
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#夜貓行程</a>
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#barhopping</a>
-          <a href="#" class="px-1 bg-primary-300 text-primary-400 me-3">#全台酒吧</a>
-        </div>
+          <ul class="d-flex list-unstyled text-primary-400">
+          <li class="article-tag me-3"><a href="#">#夜貓行程</a></li>
+          <li class="article-tag me-3"><a href="#">#barhopping</a></li>
+          <li class="article-tag"><a href="#">#全台酒吧</a></li>
+        </ul>
           <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a>
 
         </div>
