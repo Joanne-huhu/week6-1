@@ -124,18 +124,46 @@
       <div class="d-flex flex-lg-column justify-content-between align-items-start mt-auto">
         <small class="text-neutral-500 mb-6">1/5</small>
         <div>
-        <button class="rounded-pill px-3 text-neutral-400 border-neutral-400"><i class="bi bi-arrow-left"></i></button>
+        <button data-bs-target="#carouselControls-1" data-bs-slide="prev" class="rounded-pill px-3 text-neutral-400 border-neutral-400"><i class="bi bi-arrow-left"></i></button>
        <span class="text-neutral-400">———</span>
-        <button class="rounded-pill px-3 text-neutral-400 
+        <button data-bs-target="#carouselControls-1" data-bs-slide="next" class="rounded-pill px-3 text-neutral-400 
         border-neutral-400"><i class="bi bi-arrow-right"></i></button>
       </div>
       </div>
     </div>
       
 </div>
+<!--輪播-->
+<div id="carouselControls-1" class="carousel slide d-lg-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card d-lg-none d-block mb-7 border-0 border-bottom rounded-0 border-neutral-500 w-100">
+        <picture>
+          <source media="(min-width:992px )" srcset="../assets/images/articles-1.png">
+          <img src="../assets/images/articles-1-sm.png" class="card-img-top" alt="...">
+        </picture>
+        <div class="card-body">
+          <h5 class="card-title">私人島嶼的露營奇遇記</h5>
+          <p class="card-text text-neutral-400">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+          <a href="#" class="btn text-accent-200 ps-0">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card d-lg-none d-block mb-7 border-0 border-bottom rounded-0 border-neutral-500 w-100" >
+        <img src="../assets/images/articles-2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
+          <p class="card-text text-neutral-400">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+          <a href="#" class="btn text-accent-200 ps-0">Read More</a>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
 
   <div class="col-lg-4 col-12">
-  <div class="card mb-7 border-0 border-bottom rounded-0 border-neutral-500">
+  <div class="card d-none d-lg-block mb-7 border-0 border-bottom rounded-0 border-neutral-500">
     <picture>
       <source media="(min-width:992px )" srcset="../assets/images/articles-1.png">
       <img src="../assets/images/articles-1-sm.png" class="card-img-top" alt="...">
@@ -213,7 +241,7 @@
       <a class="list-group-item list-group-item-action border-0" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="bi bi-dot"></i>台北拉麵圖鑑</a>
       <a class="list-group-item list-group-item-action border-0" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="bi bi-dot"></i>海島自由行</a>
       <a class="list-group-item list-group-item-action border-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="bi bi-dot"></i>短天數出國推薦</a>
-      <a class="list-group-item list-group-item-action border-0" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings"><i class="bi bi-dot"></i>週末露營趣</a>
+      <a class="list-group-item list-group-item-action border-0" id="list-settings-list-2" data-bs-toggle="list" href="#list-settings-2" role="tab" aria-controls="list-settings-2"><i class="bi bi-dot"></i>週末露營趣</a>
     </div>
   </div>
   <div class="col-lg-9 col-12 p-7">
@@ -245,11 +273,108 @@
         
     </div>
 
-      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+        <h3 class="fs-4 text-accent-200 mb-5">台北拉麵圖鑑</h3>
+        <p class="fs-6 text-neutral-500 mb-4">｜城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+        <p class="fs-6 text-neutral-500 mb-4">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</p>
+        <p class="fs-6 text-neutral-500 mb-4">｜台南老宅手工酒藏,尋味百年人文釀意</p>
+        <ul class="d-flex justify-content-between look-pic">
+          <li>
+            <picture  class="rounded-0">
+              <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+              <img src="../assets/images/hots-3-sm.png" alt="" class="w-100"></li>
+            </picture>
+          <li class="d-none d-lg-block"><img src="../assets/images/hots-2.png" alt=""></li>
+          <li class="d-none d-lg-block"><img src="../assets/images/hots-3.png" alt=""></li>
+          <li class="d-none d-lg-block"><img src="../assets/images/hots-4.png" alt=""></li>
+        </ul>
+        <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
+          <ul class="d-flex list-unstyled text-primary-400">
+          <li class="article-tag me-3"><a href="#">#雞白湯</a></li>
+          <li class="article-tag me-3"><a href="#">#拉麵</a></li>
+          <li class="article-tag"><a href="#">#台北美食</a></li>
+          </ul>
+          <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a>
+</div>
+      
+    
     </div>
+    
+    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+      <h3 class="fs-4 text-accent-200 mb-5">海島自由行</h3>
+      <p class="fs-6 text-neutral-500 mb-4">｜私島慢活島嶼生活 - 在熱帶天堂品...</p>
+      <p class="fs-6 text-neutral-500 mb-4">｜海島漂流記 - 在陽光、沙灘和比基...</p>
+      <p class="fs-6 text-neutral-500 mb-4">｜島嶼蹤跡 - 揭開加勒比海上世外桃...</p>
+      <ul class="d-flex justify-content-between look-pic">
+        <li>
+          <picture  class="rounded-0">
+            <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+            <img src="../assets/images/hots-3-sm.png" alt="" class="w-100"></li>
+          </picture>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-2.png" alt=""></li>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-3.png" alt=""></li>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-4.png" alt=""></li>
+      </ul>
+      <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
+        <ul class="d-flex list-unstyled text-primary-400">
+        <li class="article-tag me-3"><a href="#">#熱帶國家</a></li>
+        <li class="article-tag me-3"><a href="#">#海邊</a></li>
+        <li class="article-tag"><a href="#">#無敵海景</a></li>
+        </ul>
+        <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a></div>
+
+     
   </div>
+
+  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+    <h3 class="fs-4 text-accent-200 mb-5">短天數出國推薦</h3>
+    <p class="fs-6 text-neutral-500 mb-4">｜72小時東京遊走 - 當個時尚東京通</p>
+    <p class="fs-6 text-neutral-500 mb-4">｜48小時曼谷遊玩全攻略</p>
+    <p class="fs-6 text-neutral-500 mb-4">｜三天兩夜賞櫻微醺東京</p>
+    <ul class="d-flex justify-content-between look-pic">
+      <li>
+        <picture  class="rounded-0">
+          <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+          <img src="../assets/images/hots-3-sm.png" alt="" class="w-100"></li>
+        </picture>
+      <li class="d-none d-lg-block"><img src="../assets/images/hots-2.png" alt=""></li>
+      <li class="d-none d-lg-block"><img src="../assets/images/hots-3.png" alt=""></li>
+      <li class="d-none d-lg-block"><img src="../assets/images/hots-4.png" alt=""></li>
+    </ul>
+    <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
+      <ul class="d-flex list-unstyled text-primary-400">
+      <li class="article-tag me-3"><a href="#">#說走就走</a></li>
+      <li class="article-tag me-3"><a href="#">#出國玩</a></li>
+      <li class="article-tag"><a href="#">#東亞</a></li>
+      </ul>
+      <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a></div>
+    </div>
+    <div class="tab-pane fade" id="list-settings-2" role="tabpanel" aria-labelledby="list-settings-list-2">
+      <h3 class="fs-4 text-accent-200 mb-5">週末露營趣</h3>
+      <p class="fs-6 text-neutral-500 mb-4">｜週末說走就走露營記</p>
+      <p class="fs-6 text-neutral-500 mb-4">｜城市野營日記</p>
+      <p class="fs-6 text-neutral-500 mb-4">｜和寵物去露營 - 大自然之旅的雙倍...</p>
+      <ul class="d-flex justify-content-between look-pic">
+        <li>
+          <picture  class="rounded-0">
+            <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
+            <img src="../assets/images/hots-3-sm.png" alt="" class="w-100"></li>
+          </picture>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-2.png" alt=""></li>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-3.png" alt=""></li>
+        <li class="d-none d-lg-block"><img src="../assets/images/hots-4.png" alt=""></li>
+      </ul>
+      <div class="d-flex  flex-lg-row flex-column justify-content-lg-between align-items-center">
+        <ul class="d-flex list-unstyled text-primary-400">
+        <li class="article-tag me-3"><a href="#">#戶外</a></li>
+        <li class="article-tag me-3"><a href="#">#露營控</a></li>
+        <li class="article-tag"><a href="#">#凹豆</a></li>
+        </ul>
+        <a href="#" class=" fs-5 text-accent-200 ms-lg-auto">View More<i class="bi bi-arrow-right-short"></i></a></div>
+      </div>
+    
+
 </div>
 </section>
 <!--品味生活-->
@@ -375,6 +500,7 @@
       </div>
     
       </div>
+   
   </div>
 </section>
 <!--主題決定-->
